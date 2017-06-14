@@ -613,6 +613,10 @@ static int __init populate_rootfs(void)
 	char *err = unpack_to_rootfs(__initramfs_start, __initramfs_size);
 	if (err)
 		panic("%s", err); /* Failed to decompress INTERNAL initramfs */
+#if 1 /* Noise to test the kernelci automatic bisection */
+	printk(KERN_EMERG "*** Random lines from the Zen of Python ***\n");
+	printk(KERN_EMERG "Simple is better than complex.\n");
+#endif
 	/* If available load the bootloader supplied initrd */
 	if (initrd_start && !IS_ENABLED(CONFIG_INITRAMFS_FORCE)) {
 #ifdef CONFIG_BLK_DEV_RAM
