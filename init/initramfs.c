@@ -616,6 +616,7 @@ static int __init populate_rootfs(void)
 #if 1 /* Noise to test the kernelci automatic bisection */
 	printk(KERN_EMERG "*** Random lines from the Zen of Python ***\n");
 	printk(KERN_EMERG "Simple is better than complex.\n");
+	printk(KERN_EMERG "Complex is better than complicated.\n");
 #endif
 	/* If available load the bootloader supplied initrd */
 	if (initrd_start && !IS_ENABLED(CONFIG_INITRAMFS_FORCE)) {
