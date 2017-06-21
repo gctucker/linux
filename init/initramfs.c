@@ -618,6 +618,7 @@ static int __init populate_rootfs(void)
 	printk(KERN_EMERG "Simple is better than complex.\n");
 	printk(KERN_EMERG "Complex is better than complicated.\n");
 	printk(KERN_EMERG "Flat is better than nested.\n");
+	printk(KERN_EMERG "Sparse is better than dense.\n");
 #endif
 #if 1
 	panic("THIS MUST FAIL");
