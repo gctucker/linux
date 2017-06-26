@@ -620,6 +620,7 @@ static int __init populate_rootfs(void)
 	printk(KERN_EMERG "Flat is better than nested.\n");
 	printk(KERN_EMERG "Sparse is better than dense.\n");
 	printk(KERN_EMERG "Readability counts.\n");
+	printk(KERN_EMERG "Special cases aren't special enough to break the rules.\n");
 #endif
 #if 1
 	panic("THIS MUST FAIL");
