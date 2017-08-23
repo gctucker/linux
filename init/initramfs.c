@@ -619,6 +619,9 @@ static int __init populate_rootfs(void)
 	printk(KERN_EMERG "Complex is better than complicated.\n");
 	printk(KERN_EMERG "Flat is better than nested.\n");
 #endif
+#if 1
+	panic("THIS MUST FAIL");
+#endif
 	/* If available load the bootloader supplied initrd */
 	if (initrd_start && !IS_ENABLED(CONFIG_INITRAMFS_FORCE)) {
 #ifdef CONFIG_BLK_DEV_RAM
