@@ -622,9 +622,6 @@ static int __init populate_rootfs(void)
 	printk(KERN_EMERG "Readability counts.\n");
 	printk(KERN_EMERG "Special cases aren't special enough to break the rules.\n");
 #endif
-#if 1
-	panic("THIS MUST FAIL");
-#endif
 	/* If available load the bootloader supplied initrd */
 	if (initrd_start && !IS_ENABLED(CONFIG_INITRAMFS_FORCE)) {
 #ifdef CONFIG_BLK_DEV_RAM
