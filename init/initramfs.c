@@ -597,6 +597,8 @@ static void __init clean_rootfs(void)
 	kfree(buf);
 }
 
+/* Some random comment here to create a new git base - v33 */
+
 static int __init populate_rootfs(void)
 {
 	/* Load the built in initramfs */
